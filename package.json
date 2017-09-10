@@ -4,7 +4,7 @@
   "description": "mocajs",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "DEBUG=mocajs:* node index.js",
     "start:dev": "DEBUG=mocajs:* nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -33,5 +33,9 @@
     "express": "^4.15.4",
     "oc-client": "^2.1.26",
     "pug": "^2.0.0-rc.4"
+  },
+  "engines": {
+    "node": "8.x.x",
+    "npm": "5.x.x"
   }
 }
