@@ -30,6 +30,8 @@
   "dependencies": {
     "debug": "^3.0.1",
     "dotenv": "^4.0.0",
-    "oc-client": "^2.1.26"
+    "express": "^4.15.4",
+    "oc-client": "^2.1.26",
+    "pug": "^2.0.0-rc.4"
   }
 }
