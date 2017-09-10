@@ -11,8 +11,8 @@ const client = new Client(
 const components = [
   {
     name: process.env.OC_COMPONENT_NAME || (() => { throw new Error('the OpenComponents component\'s name is missing'); })(),
-    version: process.env.OC_COMPONENT_VERSION || 'x.x.x',
-    parameters: process.env.OC_COMPONENT_PARAMETERS || {}
+    version: process.env.OC_COMPONENT_VERSION || '',
+    parameters: JSON.parse(process.env.OC_COMPONENT_PARAMETERS || '{}')
   }
 ];
 
