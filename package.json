@@ -31,11 +31,15 @@
     "debug": "^3.0.1",
     "dotenv": "^4.0.0",
     "express": "^4.15.4",
+    "http-proxy-middleware": "^0.17.4",
     "oc-client": "^2.1.26",
     "pug": "^2.0.0-rc.4"
   },
   "engines": {
     "node": "8.x.x",
     "npm": "5.x.x"
+  },
+  "bin": {
+    "mocajs-start": "./index.js"
   }
 }
