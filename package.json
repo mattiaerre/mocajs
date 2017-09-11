@@ -38,8 +38,5 @@
   "engines": {
     "node": "8.x.x",
     "npm": "5.x.x"
-  },
-  "bin": {
-    "mocajs-start": "./index.js"
   }
 }
