@@ -6,13 +6,13 @@ const client = new Client({
   registries: { serverRendering: process.env.OC_REGISTRY_BASE_URL }
 });
 
+const throwMissingName = () => {
+  throw new Error("the OpenComponents component's name is missing");
+};
+
 const components = [
   {
-    name:
-      process.env.OC_COMPONENT_NAME ||
-      (() => {
-        throw new Error("the OpenComponents component's name is missing");
-      })(),
+    name: process.env.OC_COMPONENT_NAME || throwMissingName(),
     version: process.env.OC_COMPONENT_VERSION || '',
     parameters: JSON.parse(process.env.OC_COMPONENT_PARAMETERS || '{}')
   }
