@@ -1,4 +1,3 @@
-
 const debug = require('debug')('mocajs:index');
 require('dotenv').config();
 const app = require('./app');
